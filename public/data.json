@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "category": "Programming Language",
+    "description": "A versatile programming language mainly used for web development.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "level": "Beginner Friendly",
+    "popular": true
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "category": "Programming Language",
+    "description": "A strongly typed programming language built on top of JavaScript.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "level": "Intermediate",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "name": "Python",
+    "category": "Programming Language",
+    "description": "A beginner-friendly language widely used in web development, AI, data science, and automation.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "level": "Beginner Friendly",
+    "popular": true
+  },
+  {
+    "id": 4,
+    "name": "Java",
+    "category": "Programming Language",
+    "description": "A powerful object-oriented language commonly used for enterprise and backend applications.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    "level": "Intermediate",
+    "popular": true
+  },
+  {
+    "id": 5,
+    "name": "C",
+    "category": "Programming Language",
+    "description": "A foundational programming language commonly used for systems and embedded programming.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    "level": "Intermediate",
+    "popular": false
+  },
+  {
+    "id": 6,
+    "name": "C++",
+    "category": "Programming Language",
+    "description": "A high-performance language used for system software, games, and competitive programming.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    "level": "Intermediate",
+    "popular": true
+  },
+  {
+    "id": 7,
+    "name": "C#",
+    "category": "Programming Language",
+    "description": "A modern programming language developed by Microsoft for applications, web development, and games.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+    "level": "Intermediate",
+    "popular": true
+  },
+  {
+    "id": 8,
+    "name": "PHP",
+    "category": "Programming Language",
+    "description": "A server-side scripting language widely used for web development.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    "level": "Beginner Friendly",
+    "popular": true
+  },
+  {
+    "id": 9,
+    "name": "Go",
+    "category": "Programming Language",
+    "description": "A fast and efficient language designed for scalable backend and cloud applications.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+    "level": "Intermediate",
+    "popular": false
+  },
+  {
+    "id": 10,
+    "name": "Rust",
+    "category": "Programming Language",
+    "description": "A high-performance language focused on memory safety and system-level programming.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
+    "level": "Advanced",
+    "popular": true
+  },
+  {
+    "id": 11,
+    "name": "Ruby",
+    "category": "Programming Language",
+    "description": "A developer-friendly language known for its simplicity and Ruby on Rails framework.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+    "level": "Beginner Friendly",
+    "popular": false
+  },
+  {
+    "id": 12,
+    "name": "Kotlin",
+    "category": "Programming Language",
+    "description": "A modern programming language commonly used for Android and backend development.",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+    "level": "Intermediate",
+    "popular": true
+  }
+]
