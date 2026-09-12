@@ -1,9 +1,10 @@
 export interface Technology{
-    id:number;
-    name:string;
-    category:string;
-    description:string;
-    logo:string;
-    level:string;
-    popular:string
+    id: string;
+  name: string;
+  category: string;
+  description: string;
+  icon: string;
+  rating: number;
+  difficulty: string;
+  badge: string;
 }
