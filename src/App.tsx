@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,15 +10,29 @@ const technologyPromise = async (): Promise<Technology[]> => {
   const data = await res.json();
   return data;
 };
+const technologyData = technologyPromise();
 function App() {
-  console.log(technologyPromise);
+  const [stack, setStack] = useState([]);
+  const handleAddToStack = (tech) => {
+    setStack([...stack, tech]);
+  };
+  const handleRemoveFromStack = (id: string) => {
+    setStack(stack.filter((technology) => technology.id !== id));
+  };
+  const handleRemoveAll = () => {
+    setStack([]);
+  };
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
       <Suspense fallback={<p>loading....</p>}>
         <TechnologySection
-          technologyPromise={technologyPromise()}
+          technologyPromise={technologyData}
+          handleAddToStack={handleAddToStack}
+          handleRemoveFromStack={handleRemoveFromStack}
+          handleRemoveAll={handleRemoveAll}
+          stack={stack}
         ></TechnologySection>
       </Suspense>
     </>

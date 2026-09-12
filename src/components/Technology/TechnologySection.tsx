@@ -5,12 +5,16 @@ import StackItem from "../Sidebar/StackItem";
 
 export interface TechnologySectionProps {
   technologyPromise: Promise<Technology[]>;
+   handleAddToStack: (technology: Technology) => void;
+     handleRemoveFromStack: (id: string) => void;
+      handleRemoveAll: () => void;
+   stack:Technology[];
 }
 
 export default function TechnologySection({
-  technologyPromise,
+  technologyPromise,handleAddToStack,  handleRemoveFromStack, handleRemoveAll,stack
 }: TechnologySectionProps) {
-  console.log(technologyPromise);
+ 
   const technologyes = use(technologyPromise);
   return (
     <div className="container mx-auto grid grid-cols-12 gap-6">
@@ -19,7 +23,12 @@ export default function TechnologySection({
           {technologyes.map((technology) => {
             return (
               <div>
-                <TechnologyCard key={technology.id} technology={technology} />
+                <TechnologyCard
+                key={technology.id} 
+                technology={technology}
+                handleAddToStack={handleAddToStack}
+                stack={stack}
+                 />
               </div>
             );
           })}
@@ -27,7 +36,10 @@ export default function TechnologySection({
       </div>
 
       <div className="col-span-3">
-        <StackItem />
+        <StackItem stack={stack}
+         handleRemoveFromStack={handleRemoveFromStack}
+          handleRemoveAll={handleRemoveAll}
+        />
       </div>
     </div>
   );
