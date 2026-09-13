@@ -24,6 +24,7 @@ function App() {
   };
   const handleRemoveAll = () => {
     setStack([]);
+    toast.success("All Items removed!")
   };
   return (
     <>
