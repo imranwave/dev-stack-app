@@ -1,5 +1,4 @@
 import type { Technology } from "../types/technology";
-
 export interface TechnologyCardProps {
   technology: Technology;
   handleAddToStack: (technology: Technology) => void;
@@ -14,9 +13,9 @@ export default function TechnologyCard({
   const isAdded = stack.some((item) => item.id === technology.id);
   return (
     <div className="w-full max-w-[380px] rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      {/* Top Section */}
+     
       <div className="mb-7 flex items-start justify-between">
-        {/* Logo */}
+     
         <div className="flex h-12 w-12 items-center justify-center">
           <img
             src={technology.icon}
@@ -25,7 +24,7 @@ export default function TechnologyCard({
           />
         </div>
 
-        {/* Dynamic Badge */}
+        
         {technology.badge && (
           <span
             className={`rounded-full border px-3.5 py-1.5 text-sm font-medium ${
@@ -45,17 +44,17 @@ export default function TechnologyCard({
         )}
       </div>
 
-      {/* Name */}
+      
       <h2 className="mb-2 text-[25px] font-bold text-slate-900">
         {technology.name}
       </h2>
 
-      {/* Description */}
+     
       <p className="min-h-[72px] text-[16px] leading-[1.6] text-slate-500">
         {technology.description}
       </p>
 
-      {/* Information */}
+     
       <div className="my-5 flex items-center justify-between gap-3">
         <span className="rounded-md bg-slate-100 px-2.5 py-1 text-sm text-slate-600">
           {technology.category}
@@ -71,7 +70,6 @@ export default function TechnologyCard({
         </span>
       </div>
 
-      {/* Button */}
       <button
         onClick={() => handleAddToStack(technology)}
         type="button"
@@ -82,7 +80,7 @@ export default function TechnologyCard({
             : "bg-[#080d1d] text-white hover:bg-slate-800"
         }`}
       >
-        {isAdded ? "👍Added to Stack": "Add to Stack"}
+        {isAdded ? "✓ Added to Stack": "Add to Stack"}
       </button>
     </div>
   );

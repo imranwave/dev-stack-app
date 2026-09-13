@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import TechnologySection from "./components/Technology/TechnologySection";
 import type { Technology } from "./components/types/technology";
 import Footer from "./components/Footer/Footer";
+import { toast } from "react-toastify";
 
 const technologyPromise = async (): Promise<Technology[]> => {
   const res = await fetch("/data.json");
@@ -16,6 +17,7 @@ function App() {
   const [stack, setStack] = useState([]);
   const handleAddToStack = (tech) => {
     setStack([...stack, tech]);
+      toast.success(`${tech.name} added`);
   };
   const handleRemoveFromStack = (id: string) => {
     setStack(stack.filter((technology) => technology.id !== id));

@@ -1,6 +1,7 @@
-import { MdDelete } from "react-icons/md";
-import type { Technology } from "../types/technology";
 
+import type { Technology } from "../types/technology";
+import { toast } from "react-toastify";
+import { RxCross2 } from "react-icons/rx";
 interface StackItemProps {
   stack: Technology[];
   handleRemoveFromStack: (id: string) => void;
@@ -49,10 +50,13 @@ const StackItem = ({
 
               <button
                 type="button"
-                onClick={() => handleRemoveFromStack(technology.id)}
-                className="rounded-lg px-2 py-1 text-xl font-medium text-red-500 hover:bg-red-50"
+                onClick={() => {
+                  handleRemoveFromStack(technology.id);
+                  toast.error(`${technology.name} removed`);
+                }}
+                className="rounded-lg px-2 py-1 text-xl font-medium text-red-500 hover:bg-red-50 cursor-pointer"
               >
-                <MdDelete />
+                <RxCross2 />
               </button>
             </div>
           ))}
