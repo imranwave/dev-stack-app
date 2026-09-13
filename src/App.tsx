@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import TechnologySection from "./components/Technology/TechnologySection";
 import type { Technology } from "./components/types/technology";
+import Footer from "./components/Footer/Footer";
 
 const technologyPromise = async (): Promise<Technology[]> => {
   const res = await fetch("/data.json");
@@ -35,6 +36,7 @@ function App() {
           stack={stack}
         ></TechnologySection>
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }

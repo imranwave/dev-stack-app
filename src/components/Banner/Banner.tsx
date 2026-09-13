@@ -1,12 +1,10 @@
-import React from 'react';
+
 import bannerlogo from '../../assets/banner-stack.png'
 
 const Banner = () => {
     return (
         <section className="bg-pink-20">
       <div className="mx-auto flex min-h-[330px] max-w-7xl items-center px-6 py-10 lg:px-10">
-
-        {/* Left Content */}
         <div className="w-full lg:w-1/2">
 
           <h1 className="text-4xl font-extrabold leading-tight text-[#111827] md:text-5xl">
@@ -25,7 +23,7 @@ const Banner = () => {
             fits your next project.
           </p>
 
-          {/* Buttons */}
+       
           <div className="mt-7 flex gap-2">
             <button className="rounded-md bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:scale-105">
               Explore Technologies
@@ -38,7 +36,7 @@ const Banner = () => {
 
         </div>
 
-        {/* Right Image */}
+        
         <div className="hidden w-1/2 justify-center lg:flex">
           <img
             src={bannerlogo}
