@@ -1,32 +1,23 @@
-# React + TypeScript + Vite
+1. Project Name Dev-Stack-App
+2. Programming Technology Stack is a modern web application built with React, TypeScript, and Tailwind CSS.Add to stack button click added technology add in the side bar.its beautiful and modern way.
+3. This project i used Technologies are programming Language React,TypeScript,JavaScript. Tailwind css Website desgin, and other Daisyui,React icon, tostyfy.
+4. Features01: i used tostify in npm package add to stack button click add sidebar and tostify features alert successfully add.
+Features 02: sidebar add many technologies and removeall buttn click to remove all.
+03: Add to stack button click add to sidebar technology and second time not addd to stack becouse button disable 
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Currently, two official plugins are available:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+i.jsx in lightweight version in html. html direct use to jsx.
 
-## React Compiler
+ii.props:data pass into a components and stack is menage data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+iii.useState returns an array with two elements, which are typically destructured.useState was used in the Child and Counter component examples to track user button clicks
 
-## Expanding the Oxlint configuration
+iv.useEffect takes a callback function (the effect) and an optional dependency array.useEffect was needed to load the JSON data because fetching data over a network is an asynchronous side effect
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+v.Efficient DOM Updates: Without keys, React compares list elements by index order
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+vi.conditional rendering is condition do work first true or false.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+vii. How do you pass data from a parent component to a child component, and how does a child send something back to the parent: whole this content mean "Lifting State Up"
