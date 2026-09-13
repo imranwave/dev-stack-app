@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="border-b bg-white">
+    <nav className="border-b bg-white sticky top-0">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
 
         {/* Mobile Hamburger */}
